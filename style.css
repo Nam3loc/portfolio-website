@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nav Elements */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav > div {
+    padding: 20px;
+}
+
+nav > div > a {
+    text-decoration: none;
+    color: #262729;
+}
+
+/* Welcome Page */
+
+#front-page {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #262729;
+}
+
+/* Color of Coleman - Name */
+
+#name-color {
+    color: white;
+    font-size: 102px;
+}
+
+/* Color of Full-Stack */
+
+#title-color {
+    color: white;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 36px;
+
+    margin-top: 0px;
+    padding: 20px;
+}
+
+/* Entire Portfolio Container */
+
+#project-wrapper {
+    background-color: #45567d ;
+    color: white;
+}
+
+/* Portfolio Project Grid Container */
+
+#proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 3rem;
+}
+
+/* Individual Projects */
+
+.projects {
+    background-color: #262729;
+
+    display: inline-block;
+    border: 2px solid white;
+    margin: 2rem;
+    margin-bottom: 2rem;
+
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project-img {
+    object-fit: cover;
+    width: 100%;
+    height: calc(100% - 6.8rem);
+}
+
+.project-title {
+    color: white;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #262729;
+    width: 6rem;
+    height: 3rem;
+}
+
+#proj-button {
+    color: white;
+    text-decoration: none;
+}
+
+/* Connect form links */
+
+#links { 
+    background-color: #262729;
+    color: white;
+
+    display: flex;
+    flex-flow: column;
+
+    padding-top: 5px;
+    height: 18vh;
+    width: 100vw;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links > a {
+    margin-top: 20px;
+
+    text-decoration: none;
+    color: white;
+}
+
+/* Contact form */
+
+/* #contact {
+    background-color: #45567d;
+    color: white;
+} */
+
+/* Contact form and Footer separation */
+
+#line {
+    height: 5px;
+    width: 100vw
+}
+
+/* Footer */
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: #262729;
+    color: white;
+}
