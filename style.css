@@ -43,18 +43,18 @@ nav > div > a {
 
 #name-color {
     color: white;
-    font-size: 102px;
+    font-size: 10vw;
 }
 
 /* Color of Full-Stack */
 
 #title-color {
     color: white;
-    font-size: 36px;
+    font-size: 3vw;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 4vw;
 
     margin-top: 0px;
     padding: 20px;
@@ -98,11 +98,12 @@ h2 {
 
 .project-title {
     color: white;
-    font-size: 18px;
+    font-size: 1.5vw;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 button {
@@ -125,9 +126,17 @@ button {
     display: flex;
     flex-flow: column;
 
+    padding-bottom: 100px;
     padding-top: 5px;
     height: 18vh;
     width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+    #links {
+        height: 30vh;
+        width: 100vw;
+    }
 }
 
 .links {
