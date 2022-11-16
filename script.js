@@ -15,7 +15,3 @@ jobTitle.addEventListener('click', (evt) => {
     }
     setTimeout(function(){evt.target.classList.remove("animate__backInLeft") }, 1000);
 })
-
-frontPageLinks.addEventListener('hover', (evt) => {
-        evt.target.textContent = (`</ {evt.target} >`)
-})

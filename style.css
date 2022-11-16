@@ -51,6 +51,12 @@ body {
     overflow: hidden;
 }
 
+@media only screen and (max-width: 700px) {
+    #title-pic {
+        display: none;
+    }
+}
+
 /* Color of Coleman - Name */
 
 #name-color {
@@ -84,6 +90,20 @@ h2 {
     font-size: 1vw;
     text-decoration: underline;
     color: black;
+}
+
+@media only screen and (max-width: 700px) {
+    #name-color {
+        font-size: 10vw;
+    }
+    
+    #title-color {
+        font-size: 6vw;
+    }
+
+    .front-page-link > a {
+        font-size: 3vw;
+    }
 }
 
 /* Entire Portfolio Container */
@@ -120,6 +140,12 @@ h2 {
     object-fit: cover;
     width: 100%;
     height: calc(100% - 6.8rem);
+}
+
+@media only screen and (max-width: 300px) {
+    .project-img {
+        width: 80%;
+    }
 }
 
 .project-title {
@@ -163,7 +189,7 @@ button {
 
     padding-bottom: 15%;
     padding-top: 5px;
-    height: 30vh;
+    height: 50vh;
     width: 100%;
 }
 
@@ -183,7 +209,7 @@ button {
 
 #links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #links > a {
@@ -194,8 +220,12 @@ button {
 }
 
 #connect-wrapper {
+    height: 50vh;
+    width: 100%;
+
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
