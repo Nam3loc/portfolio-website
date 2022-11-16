@@ -4,13 +4,14 @@ const jobTitle = document.querySelector('#title-color');
 
 frontPageName.addEventListener('click', (evt) => {
     if(evt.target){
-        evt.target.classList.add("animate__animated", "animate__rubberBand", "animate__repeat-1");
+        evt.target.classList.add("animate__animated", "animate__rubberBand");
     }
-    // if(evt.target.classList = ("animate__animated", "animate__rubberBand")){
-    //     evt.target.classList.remove("animate__animated", "animate__rubberBand");
-    // }
+    setTimeout(function(){evt.target.classList.remove("animate__rubberBand") }, 500);
 })
 
-frontPageName.addEventListener('pointer', (evt) => {
-    evt.target;
+jobTitle.addEventListener('click', (evt) => {
+    if(evt.target){
+        evt.target.classList.add("animate__animated", "animate__backInLeft");
+    }
+    setTimeout(function(){evt.target.classList.remove("animate__backInLeft") }, 1000);
 })

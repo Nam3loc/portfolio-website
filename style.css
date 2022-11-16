@@ -13,45 +13,46 @@ body {
     background-color: #262729;
 }
 
-/* Nav Elements */
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-nav > div {
-    padding: 20px;
-}
-
-nav > div > a {
-    text-decoration: none;
-    color: white;
-}
-
 /* Welcome Page */
 
 #front-page {
-    width: 100%;
-    height: 100vh;
-
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
+    height: 100vh;
     background-color: white;
 }
 
-/* #background-picture {
-    
-} */
+#titlepage-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    max-width: 100%;
+}
+
+#title-pic-wrapper {
+
+}
+
+#title-pic {
+    max-width: 100%;
+    height: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    /* z-index: -1; */
+}
 
 /* Color of Coleman - Name */
 
 #name-color {
     color: black;
-    font-size: 8vw;
+    font-size: 6vw;
+
+    cursor: pointer;
 }
 
 /* Color of Full-Stack */
@@ -59,13 +60,25 @@ nav > div > a {
 #title-color {
     color: black;
     font-size: 2vw;
+
+    cursor: pointer;
 }
 
 h2 {
     font-size: 4vw;
 
     margin-top: 0px;
-    padding: 20px;
+    padding: 15px;
+}
+
+.link {
+    padding: 3px;
+}
+
+.link > a {
+    font-size: 1vw;
+    text-decoration: underline;
+    color: black;
 }
 
 /* Entire Portfolio Container */
