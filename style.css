@@ -498,6 +498,12 @@ button {
     object-fit: cover;
 }
 
+@media only screen and (max-width: 250px) {
+    .individual-hover > img {
+        display: none;
+    }
+}
+
 /* Connect form */
 
 #connect-wrapper {
