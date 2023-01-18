@@ -100,11 +100,11 @@ i {
 
 .icon-button:hover {
     font-size: 3vw;
-    transition: 0.3s ease-in 100ms;
+    transition: 0.4s ease-in 100ms;
 }
 .icon-button:not(:hover) {
     font-size: 2.2vw;
-    transition: 0.3s ease-out 100ms;
+    transition: 0.35s ease-out 100ms;
 }
 
 /* Portfolio Area */
