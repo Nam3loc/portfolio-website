@@ -175,7 +175,7 @@ a {
     color: #374151;
 }
 
-#bloon-project-reversed > a {
+#bloon-project-reversed {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -186,7 +186,7 @@ a {
     object-fit: cover;
     border-radius: 10px;
 
-    width: 400px;
+    min-width: 400px;
     height: 100%;
 }
 
@@ -440,6 +440,7 @@ button {
 
 #skills-title {
     margin-bottom: 3em;
+    color: #374151;
 }
 
 /* card */
@@ -474,6 +475,9 @@ button {
 
 /* card-details */
 .individual-hover {
+    display: flex;
+    justify-content: space-between;
+
     border: 2px solid black;
     border-radius: 10px;
     padding: 2em;
@@ -486,6 +490,12 @@ button {
 
     box-shadow: 2px 2px 2px #b2b2b2;
     background-color: #e3e9ed;
+}
+
+.individual-hover > img {
+    width:  50px;
+    height: 50px;
+    object-fit: cover;
 }
 
 /* Connect form */
@@ -508,9 +518,9 @@ button {
 /* Line separator */
 
 #line {
-    height: 5px;
+    height: 2.5px;
     width: 100%;
-    background-color: white;
+    background-color: #374151;
 }
 
 /* Footer */
