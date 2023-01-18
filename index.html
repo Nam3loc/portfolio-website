@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./newStyle.css"> -->
     <link rel = "icon" href ="./Portfolio-screenshots/CE-logo.png" type = "image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
 
     <script defer src="./script.js"></script>
 </head>
@@ -18,67 +27,200 @@
         <div id="titlepage-wrapper">
             <h1 id="name-color">Coleman Escue</h1>
             <p id="title-color">Full-Stack Developer</p>
-            <div class="front-page-link"><a href="https://www.linkedin.com/in/coleman-escue" target="_blank">LinkedIn</a></div>
-            <div class="front-page-link"><a href="https://github.com/Nam3loc" target="_blank">GitHub</a></div>
-            <div class="front-page-link"><a href="#project-wrapper">Projects</a></div>
-            <div class="front-page-link"><a href="#links">Contact</a></div>
+
+            <div class="icons">
+                <div class="icon-button">
+                    <a href="https://www.linkedin.com/in/coleman-escue" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+
+                <div class="icon-button">
+                    <a href="https://github.com/Nam3loc" target="_blank"><i class="bi bi-github"></i></a>
+                </div>
+                
+                <div class="icon-button">
+                    <a href="./Resume/Portfolio-Resume.pdf" target="_blank"><i class="bi bi-list-check"></i></i></a>
+                </div>
+
+                <div class="icon-button">
+                    <a href="#links"><i class="bi bi-envelope-fill"></i></a>
+                </div>
+            </div>
+
         </div>
-        <!-- <div id="title-pic-wrapper"> -->
-            <img id="title-pic" src="./Portfolio-screenshots/background-computer.png" alt="Computer background picture">
-        <!-- </div> -->
+        
     </div>
     <div id="project-wrapper">
         <h2>Portfolio</h2>
             <div id="proj-grid">
-                <div class="projects"><a href="https://github.com/Nam3loc/bloons-project" target="_blank"><img src="./Portfolio-screenshots/bloons.png" alt="Picture of Bloons Tower Defense" class="project-img">
-                    <p class="project-title">Bloons Tower Defense</p>
-                    </a>
+
+                <div class="projects">
+                    <img src="./Portfolio-screenshots/Pinterest Clone Vertical Picture.PNG" alt="Picture of Pinterest Clone" class="project-img">
+                    <div id="description-and-links-wrapper">
+                        <div class="project-description-wrapper">
+                            <p class="project-title">Pinterest</p>
+                            <p class="project-description">
+                                The Pinterest Clone is a full-stack web app built using MongoDB, Express.js, React.js, and Node.js. It allows users to create, view and manage their own boards and pins. It was created as a capstone project in a Bootcamp and serves as a clone of the popular social media site Pinterest. 
+                                <br><br>
+                                I plan to add tags to the pins for easy searching and a "Full Experience" button for recruiters to quickly view the working app.
+                            </p>
+                        </div>
+                    
+
+                        <div class="project-button-links-wrapper">
+                            <button class="project-button-links">
+                                <a href="https://github.com/Nam3loc/pinterest" target="_blank">Click here to see Code</a>
+                            </button>
+
+                            <button class="project-button-links">
+                                <a href="https://pinterest-clone-5q1t.onrender.com/pins" target="_blank">Click here to see Project</a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="projects"><a href="https://github.com/Nam3loc/FCC-survey-form" target="_blank"><img src="./Portfolio-screenshots/survery-form.png" alt="Picture of a Survey Form" class="project-img">
-                    <p class="project-title">Survey Form</p>
-                    </a>
+                <div class="projects" id="bloon-project-reversed">
+                    <img src="./Portfolio-screenshots/bloons.png" alt="Picture of Bloons Tower Defense" class="project-img">
+                    <div id="description-and-links-wrapper">
+                        <div class="project-description-wrapper">
+                            <p class="project-title">Bloons Tower Defense</p>
+                            <p class="project-description">
+                                Bloons Tower Defense is a web app based off of the popular game Bloons TD. This game was built using HTML and HTML Canvas, CSS, and vanilla JavaScript. Bloons is a tower defense game. A tower defense game is a game in which enemies have to cross a map and get to your tower, where they will try to destroy your tower. The goal of the game is to place towers down around the enemies path so that the towers can kill the enemies before they reach your tower at the other end of the map.
+                                <br><br>
+                                I plan to fix the glitch of a monkey below the path shooting is glitched. Also the dart hitting the balloon is not optimal. I also plan to add more balloons with different characteristics like speed and layers to add depth to the game.
+                            </p>
+                        </div>
+                    
+
+                        <div class="project-button-links-wrapper">
+                            <button class="project-button-links">
+                                <a href="https://github.com/Nam3loc/bloons-project" target="_blank">Click here to see Code</a>
+                            </button>
+
+                            <button class="project-button-links">
+                                <a href="https://nam3loc.github.io/bloons-project/" target="_blank">Click here to see Project</a>
+                            </button>
+                        </div>
+
+                    </div>
                 </div>
 
-                <div class="projects"><a href="https://github.com/Nam3loc/seicafe-full-mern-app" target="_blank"><img src="./Portfolio-screenshots/SEI-cafe.PNG" alt="Picture of Cafe Website" class="project-img">
-                    <p class="project-title">SEI Cafe</p>
-                    </a>
-                </div>
+                <div class="projects">
+                    <img src="./Portfolio-screenshots/survery-form.png" alt="Picture of a Survey Form" class="project-img">
+                    <div id="description-and-links-wrapper">
+                        <div class="project-description-wrapper">
+                            <p class="project-title">Survey Form</p>
+                            <p class="project-description">
+                                This survey form is a simple HTML and CSS web app. It was one of my first projects and was built for my old company.
+                                <br><br>
+                                I plan to add functionality through JavaScript and make this a fully functioning survery form.
+                            </p>
+                        </div>
+                    
 
-                <div class="projects"><a href="https://github.com/Nam3loc/jeopardy-react-api/blob/main/README.md" target="_blank"><img src="./Portfolio-screenshots/Jeopardy.PNG" alt="Picture of Jeopardy" class="project-img">
-                    <p class="project-title">Jeopardy</p>
-                    </a>
-                </div>
+                        <div class="project-button-links-wrapper">
+                            <button class="project-button-links">
+                                <a href="https://github.com/Nam3loc/FCC-survey-form" target="_blank">Click here to see Code</a>
+                            </button>
 
-                <div class="projects"><a href="https://github.com/Nam3loc/movies-app-mern-architecture" target="_blank"><img src="./Portfolio-screenshots/Movies.PNG" alt="Picture of movies database" class="project-img">
-                    <p class="project-title">Movie Database</p>
-                    </a>
-                </div>
-
-                <div class="projects"><a href="https://github.com/Nam3loc/express-fruits-fullcrud" target="_blank"><img src="./Portfolio-screenshots/Fruits.PNG" alt="Picture of Fruits app" class="project-img">
-                    <p class="project-title">Fruits App</p>
-                    </a>
+                            <button class="project-button-links">
+                                <a href="https://github.com/Nam3loc/FCC-survey-form" target="_blank">Click here to see Project</a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
             </div>
-        <button><a id="proj-button" href="https://github.com/Nam3loc">Show all</a></button>
+
+            <div id="button-container">
+                <button>
+                    <a id="more-projects" href="https://github.com/Nam3loc">Click for more projects</a>
+                </button>
+            </div>
         <br>
         <br>
     </div>
+
+    <div class="skills-wrapper">
+        <h1 id="skills-title">Skills</h1>
+        <div class="skills-grid">
+
+            <div class="individual-skills">
+                <div class="individual-hover">
+                    HTML
+                </div>
+            </div>
+
+            <div class="individual-skills">
+                <div class="individual-hover">
+                    CSS
+                </div>
+            </div>
+
+            <div class="individual-skills">
+                <div class="individual-hover">
+                    JavaScript
+                </div>
+            </div>
+
+            <div class="individual-skills">
+                <div class="individual-hover">
+                    MongoDB
+                </div>
+            </div>
+
+            <div class="individual-skills">
+                <div class="individual-hover">
+                    Express
+                </div>
+            </div>
+            
+            <div class="individual-skills">
+                <div class="individual-hover">
+                    React
+                </div>
+            </div>
+
+            <div class="individual-skills">
+                <div class="individual-hover">
+                    Node
+                </div>
+            </div>
+
+            <div class="individual-skills">
+                <div class="individual-hover">
+                    Git/Bash
+                </div>
+            </div>
+
+            <div class="individual-skills">
+                <div class="individual-hover">
+                    CSS Frameworks: Bootstrap, MaterialUI, Tailwind
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="links">
         <div id="connect-wrapper">
-            <h1>Hey, Let's Connect...</h1>
-            <p>What is your favorite streaming service?</p>
-            <div id="links">
-                <a href="https://www.linkedin.com/in/coleman-escue">Linked In</a>
-                <a href="https://github.com/Nam3loc">GitHub</a>
-                <a href="mailto: rce2015@gmail.com">Email</a>
+            <h1>Hey, let's connect!</h1>
+            <div class="icons">
+                <div class="icon-button">
+                    <a href="https://www.linkedin.com/in/coleman-escue" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+
+                <div class="icon-button">
+                    <a href="https://github.com/Nam3loc" target="_blank"><i class="bi bi-github"></i></a>
+                </div>
+
+                <div class="icon-button">
+                    <a href="mailto:rce2015@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                </div>
             </div>
         </div>
     </div>
     <div id="line"></div>
     <footer>
-        Copyright &copy; 2022. Proudly Designed by Coleman Escue
+        Copyright &copy; 2023. Proudly Designed by Coleman Escue
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
