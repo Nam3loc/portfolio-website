@@ -98,6 +98,11 @@ i {
     box-shadow: 2.2px 2.2px 2.2px 2.2px;
 }
 
+/* .logo-icon-front-page {
+    width: 40px;
+    height: 40px;
+} */
+
 .icon-button:hover {
     font-size: 3vw;
     transition: 0.35s ease-in 100ms;
