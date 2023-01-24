@@ -98,6 +98,22 @@ i {
     box-shadow: 2.2px 2.2px 2.2px 2.2px;
 }
 
+@media only screen and (max-width: 550px) {
+    .icon-button {
+        width: 4em;
+        height: 4em;
+    }
+
+    .icon-button > a {
+        width: 4em;
+        height: 4em;
+    }
+
+    i {
+        font-size: 5.3vw;
+    }
+}
+
 @media only screen and (max-width: 420px) {
     .icon-button {
         width: 4em;
@@ -203,6 +219,12 @@ a {
 }
 
 /* Project picture */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .project-img {
     object-fit: cover;
@@ -489,6 +511,21 @@ a {
     }
 }
 
+@media only screen and (max-width: 300px) {
+    .project-button-links {
+        width: 20vw;
+        height: 5vh;
+    }
+
+    .project-button-links > a {
+        width: 20vw;
+        height: 4.7vh;
+        border-radius: 10px;
+
+        font-size: 0.4em;
+    }
+}
+
 /* All Projects Button under projects */
 
 button {
@@ -549,7 +586,7 @@ button:hover {
     padding: 30px;
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 550px) {
     .skills-grid {
         display: grid;
         grid-template-columns: 2fr;
