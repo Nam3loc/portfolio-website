@@ -213,7 +213,7 @@ a {
     color: #374151;
 }
 
-#bloon-project-reversed {
+#project-reversed {
     display: flex;
     flex-direction: row-reverse;
 }
