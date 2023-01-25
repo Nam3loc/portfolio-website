@@ -532,7 +532,7 @@ button {
     border-radius: 10px;
     background-color: #ecf0f3;
     color: black;
-    border-color: black;
+    border: 2px solid black;
 
     width: 95vw;
     height: 15vh;
